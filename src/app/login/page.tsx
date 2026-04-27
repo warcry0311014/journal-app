@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     
     // Mock Authentication: We just set a flag in local storage to simulate being logged in.
-    // In a real production app, this would verify credentials with Supabase.
+    // In a real production app, this would verify credentials with Convex.
     localStorage.setItem('journal_session', email || 'user@example.com');
     router.push('/');
   };
